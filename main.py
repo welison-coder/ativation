@@ -16,7 +16,7 @@ import pyautogui
 # pyautogui.press(['tab', 'tab'])
 # pyautogui.press('enter')
 
-
+# Entra no diretório c: para realizar a busca pelos e-mails.
 pyautogui.alert( '***Atenção***\n'
                 'Clique em [ok] para inicializar o programa.')
 pyautogui.press('winleft')
@@ -25,7 +25,7 @@ pyautogui.write('C:')
 pyautogui.sleep(3)
 pyautogui.press('enter')
 
-
+#pesquisa e entra na pasta desejada.
 pyautogui.sleep(3)
 pyautogui.hotkey('ctrl', 'f')
 pyautogui.sleep(3)
@@ -40,6 +40,7 @@ pyautogui.sleep(3)
 pyautogui.press('enter')
 pyautogui.sleep(3)
 
+#pesquisa e entra no bloco de notas que contém os e-mais do office.
 pyautogui.hotkey('ctrl', 'f')
 pyautogui.sleep(3)
 pyautogui.write('EMAILOFICE')
@@ -52,6 +53,7 @@ pyautogui.press('space')
 pyautogui.sleep(3)
 pyautogui.press('enter')
 pyautogui.sleep(3)
+#realiza a copia dos e-mails
 pyautogui.keyDown('ctrl')
 pyautogui.keyDown('shift')
 pyautogui.press('right', presses=1)
@@ -65,7 +67,7 @@ pyautogui.press('down')
 pyautogui.sleep(3)
 pyautogui.press('backspace', presses=2)
 pyautogui.hotkey('ctrl','s')
-
+#entrando no ofice para criação do email
 pyautogui.press('winleft')
 pyautogui.sleep(3)
 pyautogui.write('word')
@@ -84,6 +86,7 @@ pyautogui.press('enter')
 pyautogui.sleep(1)
 pyautogui.hotkey('ctrl', 'v')
 pyautogui.sleep(1)
+#entrando no bloco de nota para copiar a senha pré definida
 pyautogui.keyDown('alt')
 pyautogui.press('tab', presses=2)
 pyautogui.keyUp('alt')
@@ -98,7 +101,7 @@ pyautogui.keyUp('shift')
 pyautogui.sleep(1)
 pyautogui.hotkey('ctrl','c')
 pyautogui.sleep(1)
-
+#voltando no ofice para colar a senha
 pyautogui.keyDown('alt')
 pyautogui.press('tab')
 pyautogui.keyUp('alt')
